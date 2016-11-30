@@ -1,0 +1,35 @@
+{
+  "name": "winston-twitter",
+  "version": "0.0.0",
+  "description": "A twitter transport for winston",
+  "main": "winston-twitter.js",
+  "scripts": {
+    "lint": "eslint lib/*.js",
+    "cover": "istanbul cover --include-all-sources --report html _mocha -- lib/*.mocha.js -R spec -t 5000",
+    "test": "mocha lib/*.mocha.js",
+    "preversion": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "keywords": [
+    "logging",
+    "logger",
+    "log",
+    "winston",
+    "twitter"
+  ],
+  "author": "Sébastien Elet",
+  "license": "MIT",
+  "dependencies": {
+    "twitter": "^1.4.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-simplifield": "^4.3.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.0",
+    "nock": "^9.0.2"
+  }
+}
