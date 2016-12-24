@@ -1,6 +1,6 @@
 {
   "name": "winston-twitter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A twitter transport for winston",
   "main": "winston-twitter.js",
   "scripts": {
